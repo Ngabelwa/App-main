@@ -1,0 +1,84 @@
+/* Existing styles... */
+
+.add-card-page {
+    background-color: #000;
+    color: #fff;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.add-card-page header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.add-card-page h1 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.search-container {
+    margin-bottom: 20px;
+}
+
+#searchCard {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.add-card-page h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.store-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #333;
+}
+
+.store-item img {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+.other-card {
+    margin-top: 20px;
+}
+
+#otherCardBtn {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.plus-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 24px;
+    margin-right: 15px;
+}
+
+#cancelBtn {
+    background: none;
+    border: none;
+    color: #007AFF;
+    font-size: 16px;
+}

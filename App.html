@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loyalty Card App</title>
+    <link rel="stylesheet" href="App.css">
+    <style>
+        .add-card {
+            background-color: #e0e0e0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2em;
+            color: #757575;
+            cursor: pointer;
+            border: 2px dashed #bdbdbd;
+        }
+    </style>
+</head>
+<body>
+    <div class="app">
+        <header>
+            <h1>Rewards</h1>
+            <span class="info-icon">ⓘ</span>
+        </header>
+        <main>
+            <div class="balance">
+                <h2>4,357 points</h2>
+                <p>R43.57</p>
+            </div>
+            <button class="voucher-btn">Vouchers ></button>
+            <div class="card-section">
+                <h3>Select Card</h3>
+                <div class="card-scroll">
+                    <a href="AddCard.html" style="text-decoration: none; color: inherit;">
+                        <div class="card add-card">
+                            <div class="card-content">+</div>
+                        </div>
+                    </a>
+                    <div class="card visa" data-card="visa">
+                        <div class="card-content">
+                            <div class="card-chip">
+                                <div class="card-chip-lines"></div>
+                                <div class="card-chip-lines"></div>
+                                <div class="card-chip-lines"></div>
+                                <div class="card-chip-lines"></div>
+                                <div class="card-chip-lines"></div>
+                            </div>
+                            <div class="card-number">**** **** **** 1234</div>
+                            <div class="card-name">JOHN DOE</div>
+                        </div>
+                    </div>
+                    <div class="card mastercard" data-card="mastercard">
+                        <div class="card-content">
+                            <div class="card-chip">
+                                <div class="card-chip-lines"></div>
+                                <div class="card-chip-lines"></div>
+                                <div class="card-chip-lines"></div>
+                                <div class="card-chip-lines"></div>
+                                <div class="card-chip-lines"></div>
+                            </div>
+                            <div class="card-number">**** **** **** 5678</div>
+                            <div class="card-name">JANE SMITH</div>
+                        </div>
+                    </div>
+                    <div class="card amex" data-card="amex">
+                        <div class="card-content">
+                            <div class="card-chip">
+                                <div class="card-chip-lines"></div>
+                                <div class="card-chip-lines"></div>
+                                <div class="card-chip-lines"></div>
+                                <div class="card-chip-lines"></div>
+                                <div class="card-chip-lines"></div>
+                            </div>
+                            <div class="card-number">**** ****** 90123</div>
+                            <div class="card-name">ALEX JOHNSON</div>
+                        </div>
+                    </div>
+                    <a href="AddCard.html" style="text-decoration: none; color: inherit;">
+                        <div class="card add-card">
+                            <div class="card-content">+</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="placeholder"></div>
+            <button class="receipt-btn">
+                <span class="icon">📄</span>
+                Digital Receipt
+            </button>
+        </main>
+        <nav>
+            <button class="active">💳</button>
+            <button>🏷️</button>
+            <button>🎁</button>
+            <button>👤</button>
+        </nav>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.card');
+            cards.forEach(card => {
+                card.addEventListener('click', function() {
+                    cards.forEach(c => c.classList.remove('selected')); // Remove 'selected' class from all cards
+                    card.classList.add('selected'); // Add 'selected' class to the clicked card
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
+
